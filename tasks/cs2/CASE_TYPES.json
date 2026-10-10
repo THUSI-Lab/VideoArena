@@ -1,0 +1,311 @@
+{
+  "game": "cs2",
+  "thresholds": {
+    "blow_wlf": 0.8,
+    "blow_llf": 0.1,
+    "rev_deficit": 3
+  },
+  "note": "20 cases: 8 blowout / 5 tense / 7 comeback.",
+  "cases": [
+    {
+      "id": "9z-vs-legacy-m1-inferno",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "A",
+      "final": "13-9",
+      "features": {
+        "winner_lead_frac": 1.0,
+        "loser_lead_frac": 0.0,
+        "max_winner_deficit": -1,
+        "lead_changes": 0,
+        "n_rounds": 22
+      }
+    },
+    {
+      "id": "9z-vs-legacy-m2-nuke",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "B",
+      "final": "3-13",
+      "features": {
+        "winner_lead_frac": 1.0,
+        "loser_lead_frac": 0.0,
+        "max_winner_deficit": -1,
+        "lead_changes": 0,
+        "n_rounds": 16
+      }
+    },
+    {
+      "id": "falcons-vs-vitality-m3-dust2",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "A",
+      "final": "13-11",
+      "features": {
+        "winner_lead_frac": 0.833,
+        "loser_lead_frac": 0.042,
+        "max_winner_deficit": 1,
+        "lead_changes": 2,
+        "n_rounds": 24
+      }
+    },
+    {
+      "id": "mouz-vs-fut-m1-ancient",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "A",
+      "final": "13-11",
+      "features": {
+        "winner_lead_frac": 0.833,
+        "loser_lead_frac": 0.042,
+        "max_winner_deficit": 1,
+        "lead_changes": 2,
+        "n_rounds": 24
+      }
+    },
+    {
+      "id": "natus-vincere-vs-the-mongolz-m3-mirage",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "B",
+      "final": "6-13",
+      "features": {
+        "winner_lead_frac": 0.895,
+        "loser_lead_frac": 0.053,
+        "max_winner_deficit": 1,
+        "lead_changes": 1,
+        "n_rounds": 19
+      }
+    },
+    {
+      "id": "natus-vincere-vs-vitality-m3-inferno",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "B",
+      "final": "3-13",
+      "features": {
+        "winner_lead_frac": 1.0,
+        "loser_lead_frac": 0.0,
+        "max_winner_deficit": -1,
+        "lead_changes": 0,
+        "n_rounds": 16
+      }
+    },
+    {
+      "id": "spirit-vs-faze-m1-nuke",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "B",
+      "final": "8-13",
+      "features": {
+        "winner_lead_frac": 0.857,
+        "loser_lead_frac": 0.048,
+        "max_winner_deficit": 1,
+        "lead_changes": 1,
+        "n_rounds": 21
+      }
+    },
+    {
+      "id": "spirit-vs-faze-m2-ancient",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "B",
+      "final": "6-13",
+      "features": {
+        "winner_lead_frac": 1.0,
+        "loser_lead_frac": 0.0,
+        "max_winner_deficit": -1,
+        "lead_changes": 0,
+        "n_rounds": 19
+      }
+    },
+    {
+      "id": "falcons-vs-vitality-m2-inferno",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "A",
+      "final": "13-11",
+      "features": {
+        "winner_lead_frac": 0.583,
+        "loser_lead_frac": 0.167,
+        "max_winner_deficit": 2,
+        "lead_changes": 3,
+        "n_rounds": 24
+      }
+    },
+    {
+      "id": "g2-vs-spirit-m1-overpass",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "A",
+      "final": "13-9",
+      "features": {
+        "winner_lead_frac": 0.455,
+        "loser_lead_frac": 0.318,
+        "max_winner_deficit": 2,
+        "lead_changes": 3,
+        "n_rounds": 22
+      }
+    },
+    {
+      "id": "mouz-vs-fut-m3-mirage",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "A",
+      "final": "13-7",
+      "features": {
+        "winner_lead_frac": 0.75,
+        "loser_lead_frac": 0.15,
+        "max_winner_deficit": 2,
+        "lead_changes": 2,
+        "n_rounds": 20
+      }
+    },
+    {
+      "id": "spirit-vs-falcons-m1-anubis",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "final": "14-16",
+      "features": {
+        "winner_lead_frac": 0.633,
+        "loser_lead_frac": 0.133,
+        "max_winner_deficit": 2,
+        "lead_changes": 4,
+        "n_rounds": 30
+      }
+    },
+    {
+      "id": "spirit-vs-falcons-m3-dust2",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "A",
+      "final": "16-12",
+      "features": {
+        "winner_lead_frac": 0.357,
+        "loser_lead_frac": 0.393,
+        "max_winner_deficit": 2,
+        "lead_changes": 3,
+        "n_rounds": 28
+      }
+    },
+    {
+      "id": "g2-vs-spirit-m2-dust2",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "A",
+      "final": "16-14",
+      "features": {
+        "winner_lead_frac": 0.367,
+        "loser_lead_frac": 0.333,
+        "max_winner_deficit": 4,
+        "lead_changes": 5,
+        "n_rounds": 30
+      }
+    },
+    {
+      "id": "mouz-vs-fut-m2-nuke",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "A",
+      "final": "13-10",
+      "features": {
+        "winner_lead_frac": 0.522,
+        "loser_lead_frac": 0.348,
+        "max_winner_deficit": 4,
+        "lead_changes": 2,
+        "n_rounds": 23
+      }
+    },
+    {
+      "id": "natus-vincere-vs-the-mongolz-m1-nuke",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "A",
+      "final": "13-8",
+      "features": {
+        "winner_lead_frac": 0.476,
+        "loser_lead_frac": 0.381,
+        "max_winner_deficit": 3,
+        "lead_changes": 2,
+        "n_rounds": 21
+      }
+    },
+    {
+      "id": "natus-vincere-vs-the-mongolz-m2-ancient",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "A",
+      "final": "16-13",
+      "features": {
+        "winner_lead_frac": 0.207,
+        "loser_lead_frac": 0.724,
+        "max_winner_deficit": 6,
+        "lead_changes": 1,
+        "n_rounds": 29
+      }
+    },
+    {
+      "id": "natus-vincere-vs-vitality-m1-dust2",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "A",
+      "final": "13-11",
+      "features": {
+        "winner_lead_frac": 0.333,
+        "loser_lead_frac": 0.5,
+        "max_winner_deficit": 4,
+        "lead_changes": 2,
+        "n_rounds": 24
+      }
+    },
+    {
+      "id": "natus-vincere-vs-vitality-m2-anubis",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "B",
+      "final": "11-13",
+      "features": {
+        "winner_lead_frac": 0.292,
+        "loser_lead_frac": 0.417,
+        "max_winner_deficit": 3,
+        "lead_changes": 4,
+        "n_rounds": 24
+      }
+    },
+    {
+      "id": "spirit-vs-falcons-m2-mirage",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "A",
+      "final": "13-8",
+      "features": {
+        "winner_lead_frac": 0.286,
+        "loser_lead_frac": 0.524,
+        "max_winner_deficit": 4,
+        "lead_changes": 3,
+        "n_rounds": 21
+      }
+    }
+  ]
+}

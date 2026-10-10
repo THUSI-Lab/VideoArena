@@ -1,0 +1,415 @@
+{
+  "game": "dota2",
+  "thresholds": {
+    "blow_wlf": 0.8,
+    "blow_llf": 0.1,
+    "rev_gold": 8000
+  },
+  "distribution": {
+    "碾压": 7,
+    "焦灼": 6,
+    "翻转": 7
+  },
+  "cases": [
+    {
+      "case_id": "dota-01",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "dire",
+      "duration_min": 45,
+      "n_t1": 25,
+      "n_minutes": 46,
+      "features": {
+        "winner_gold_lead_frac": 1.0,
+        "winner_gold_behind_frac": 0.0,
+        "max_gold_deficit": -34,
+        "final_gold_adv": 38539,
+        "gold_lead_changes": 0,
+        "winner_xp_lead_frac": 1.0,
+        "max_xp_deficit": -8,
+        "n_minutes": 46
+      }
+    },
+    {
+      "case_id": "dota-02",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "radiant",
+      "duration_min": 28,
+      "n_t1": 10,
+      "n_minutes": 29,
+      "features": {
+        "winner_gold_lead_frac": 1.0,
+        "winner_gold_behind_frac": 0.0,
+        "max_gold_deficit": -62,
+        "final_gold_adv": 13960,
+        "gold_lead_changes": 0,
+        "winner_xp_lead_frac": 0.966,
+        "max_xp_deficit": 195,
+        "n_minutes": 29
+      }
+    },
+    {
+      "case_id": "dota-03",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "dire",
+      "duration_min": 20,
+      "n_t1": 7,
+      "n_minutes": 21,
+      "features": {
+        "winner_gold_lead_frac": 1.0,
+        "winner_gold_behind_frac": 0.0,
+        "max_gold_deficit": -278,
+        "final_gold_adv": 11557,
+        "gold_lead_changes": 0,
+        "winner_xp_lead_frac": 0.905,
+        "max_xp_deficit": 155,
+        "n_minutes": 21
+      }
+    },
+    {
+      "case_id": "dota-04",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "dire",
+      "duration_min": 27,
+      "n_t1": 20,
+      "n_minutes": 28,
+      "features": {
+        "winner_gold_lead_frac": 1.0,
+        "winner_gold_behind_frac": 0.0,
+        "max_gold_deficit": -294,
+        "final_gold_adv": 21655,
+        "gold_lead_changes": 0,
+        "winner_xp_lead_frac": 1.0,
+        "max_xp_deficit": -132,
+        "n_minutes": 28
+      }
+    },
+    {
+      "case_id": "dota-05",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "dire",
+      "duration_min": 32,
+      "n_t1": 22,
+      "n_minutes": 33,
+      "features": {
+        "winner_gold_lead_frac": 1.0,
+        "winner_gold_behind_frac": 0.0,
+        "max_gold_deficit": -350,
+        "final_gold_adv": 27823,
+        "gold_lead_changes": 0,
+        "winner_xp_lead_frac": 1.0,
+        "max_xp_deficit": -100,
+        "n_minutes": 33
+      }
+    },
+    {
+      "case_id": "dota-06",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "radiant",
+      "duration_min": 27,
+      "n_t1": 25,
+      "n_minutes": 28,
+      "features": {
+        "winner_gold_lead_frac": 1.0,
+        "winner_gold_behind_frac": 0.0,
+        "max_gold_deficit": -384,
+        "final_gold_adv": 24577,
+        "gold_lead_changes": 0,
+        "winner_xp_lead_frac": 1.0,
+        "max_xp_deficit": -100,
+        "n_minutes": 28
+      }
+    },
+    {
+      "case_id": "dota-07",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "dire",
+      "duration_min": 39,
+      "n_t1": 25,
+      "n_minutes": 40,
+      "features": {
+        "winner_gold_lead_frac": 1.0,
+        "winner_gold_behind_frac": 0.0,
+        "max_gold_deficit": -398,
+        "final_gold_adv": 31376,
+        "gold_lead_changes": 0,
+        "winner_xp_lead_frac": 1.0,
+        "max_xp_deficit": -100,
+        "n_minutes": 40
+      }
+    },
+    {
+      "case_id": "dota-08",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "radiant",
+      "duration_min": 60,
+      "n_t1": 31,
+      "n_minutes": 61,
+      "features": {
+        "winner_gold_lead_frac": 0.311,
+        "winner_gold_behind_frac": 0.672,
+        "max_gold_deficit": 7704,
+        "final_gold_adv": 5650,
+        "gold_lead_changes": 5,
+        "winner_xp_lead_frac": 0.475,
+        "max_xp_deficit": 9049,
+        "n_minutes": 61
+      }
+    },
+    {
+      "case_id": "dota-09",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "dire",
+      "duration_min": 64,
+      "n_t1": 46,
+      "n_minutes": 65,
+      "features": {
+        "winner_gold_lead_frac": 0.446,
+        "winner_gold_behind_frac": 0.523,
+        "max_gold_deficit": 6011,
+        "final_gold_adv": 6059,
+        "gold_lead_changes": 8,
+        "winner_xp_lead_frac": 0.585,
+        "max_xp_deficit": 11434,
+        "n_minutes": 65
+      }
+    },
+    {
+      "case_id": "dota-10",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "radiant",
+      "duration_min": 58,
+      "n_t1": 47,
+      "n_minutes": 59,
+      "features": {
+        "winner_gold_lead_frac": 0.661,
+        "winner_gold_behind_frac": 0.322,
+        "max_gold_deficit": 3578,
+        "final_gold_adv": 9194,
+        "gold_lead_changes": 5,
+        "winner_xp_lead_frac": 0.746,
+        "max_xp_deficit": 3135,
+        "n_minutes": 59
+      }
+    },
+    {
+      "case_id": "dota-11",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "dire",
+      "duration_min": 54,
+      "n_t1": 33,
+      "n_minutes": 55,
+      "features": {
+        "winner_gold_lead_frac": 0.873,
+        "winner_gold_behind_frac": 0.109,
+        "max_gold_deficit": 3032,
+        "final_gold_adv": 5770,
+        "gold_lead_changes": 8,
+        "winner_xp_lead_frac": 0.455,
+        "max_xp_deficit": 27754,
+        "n_minutes": 55
+      }
+    },
+    {
+      "case_id": "dota-12",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "radiant",
+      "duration_min": 58,
+      "n_t1": 35,
+      "n_minutes": 59,
+      "features": {
+        "winner_gold_lead_frac": 0.864,
+        "winner_gold_behind_frac": 0.119,
+        "max_gold_deficit": 1252,
+        "final_gold_adv": 3682,
+        "gold_lead_changes": 3,
+        "winner_xp_lead_frac": 0.847,
+        "max_xp_deficit": 772,
+        "n_minutes": 59
+      }
+    },
+    {
+      "case_id": "dota-13",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "radiant",
+      "duration_min": 27,
+      "n_t1": 19,
+      "n_minutes": 28,
+      "features": {
+        "winner_gold_lead_frac": 0.679,
+        "winner_gold_behind_frac": 0.286,
+        "max_gold_deficit": 869,
+        "final_gold_adv": 4953,
+        "gold_lead_changes": 1,
+        "winner_xp_lead_frac": 0.714,
+        "max_xp_deficit": 1050,
+        "n_minutes": 28
+      }
+    },
+    {
+      "case_id": "dota-14",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "dire",
+      "duration_min": 65,
+      "n_t1": 26,
+      "n_minutes": 66,
+      "features": {
+        "winner_gold_lead_frac": 0.091,
+        "winner_gold_behind_frac": 0.894,
+        "max_gold_deficit": 18202,
+        "final_gold_adv": 7011,
+        "gold_lead_changes": 3,
+        "winner_xp_lead_frac": 0.242,
+        "max_xp_deficit": 29350,
+        "n_minutes": 66
+      }
+    },
+    {
+      "case_id": "dota-15",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "dire",
+      "duration_min": 59,
+      "n_t1": 48,
+      "n_minutes": 60,
+      "features": {
+        "winner_gold_lead_frac": 0.267,
+        "winner_gold_behind_frac": 0.717,
+        "max_gold_deficit": 16007,
+        "final_gold_adv": 2204,
+        "gold_lead_changes": 3,
+        "winner_xp_lead_frac": 0.3,
+        "max_xp_deficit": 16774,
+        "n_minutes": 60
+      }
+    },
+    {
+      "case_id": "dota-16",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "dire",
+      "duration_min": 62,
+      "n_t1": 36,
+      "n_minutes": 63,
+      "features": {
+        "winner_gold_lead_frac": 0.111,
+        "winner_gold_behind_frac": 0.873,
+        "max_gold_deficit": 15443,
+        "final_gold_adv": 4745,
+        "gold_lead_changes": 5,
+        "winner_xp_lead_frac": 0.127,
+        "max_xp_deficit": 25493,
+        "n_minutes": 63
+      }
+    },
+    {
+      "case_id": "dota-17",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "dire",
+      "duration_min": 45,
+      "n_t1": 39,
+      "n_minutes": 46,
+      "features": {
+        "winner_gold_lead_frac": 0.196,
+        "winner_gold_behind_frac": 0.804,
+        "max_gold_deficit": 12059,
+        "final_gold_adv": 7056,
+        "gold_lead_changes": 9,
+        "winner_xp_lead_frac": 0.304,
+        "max_xp_deficit": 15877,
+        "n_minutes": 46
+      }
+    },
+    {
+      "case_id": "dota-18",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "dire",
+      "duration_min": 64,
+      "n_t1": 39,
+      "n_minutes": 65,
+      "features": {
+        "winner_gold_lead_frac": 0.323,
+        "winner_gold_behind_frac": 0.662,
+        "max_gold_deficit": 10317,
+        "final_gold_adv": 8110,
+        "gold_lead_changes": 2,
+        "winner_xp_lead_frac": 0.646,
+        "max_xp_deficit": 6131,
+        "n_minutes": 65
+      }
+    },
+    {
+      "case_id": "dota-19",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "radiant",
+      "duration_min": 50,
+      "n_t1": 32,
+      "n_minutes": 51,
+      "features": {
+        "winner_gold_lead_frac": 0.196,
+        "winner_gold_behind_frac": 0.784,
+        "max_gold_deficit": 10119,
+        "final_gold_adv": 14420,
+        "gold_lead_changes": 1,
+        "winner_xp_lead_frac": 0.275,
+        "max_xp_deficit": 10421,
+        "n_minutes": 51
+      }
+    },
+    {
+      "case_id": "dota-20",
+      "type_zh": "翻转",
+      "type_en": "comeback",
+      "difficulty": 3,
+      "winner": "radiant",
+      "duration_min": 53,
+      "n_t1": 32,
+      "n_minutes": 54,
+      "features": {
+        "winner_gold_lead_frac": 0.296,
+        "winner_gold_behind_frac": 0.685,
+        "max_gold_deficit": 9870,
+        "final_gold_adv": 1260,
+        "gold_lead_changes": 2,
+        "winner_xp_lead_frac": 0.63,
+        "max_xp_deficit": 2523,
+        "n_minutes": 54
+      }
+    }
+  ]
+}

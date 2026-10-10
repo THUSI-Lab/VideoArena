@@ -1,0 +1,678 @@
+{
+  "game": "badminton",
+  "source": "ShuttleSet (KDD-23) annotation, rendered as synthetic 3D",
+  "engine": "badminton, mechanism A (score read from the annotation, no evaluator)",
+  "granularity": "one set of a singles match",
+  "V_definition": "pts_near - pts_far within this set; a function of the picture, never displayed in it",
+  "tiers": {
+    "T1": "(game_clock_s, scoring_side, zone)",
+    "T2": "impact in {extended, taken, levelled, narrowed}",
+    "T3": "score_after as the pair (near, far)"
+  },
+  "zone_alphabet": [
+    "net",
+    "out",
+    "in_front",
+    "in_mid",
+    "in_back"
+  ],
+  "match_tolerance_s": 3.0,
+  "distribution": {
+    "tense": 7,
+    "blowout": 6,
+    "reversal": 7
+  },
+  "cases": [
+    {
+      "case_id": "badminton-01",
+      "case_type": "tense",
+      "duration_min": 22.2,
+      "n_t1": 36,
+      "final_score": [
+        21,
+        15
+      ],
+      "t2_classes": {
+        "taken": 1,
+        "extended": 20,
+        "narrowed": 15
+      },
+      "zone_counts": {
+        "out": 12,
+        "net": 14,
+        "in_mid": 7,
+        "in_back": 2,
+        "in_front": 1
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-02",
+      "case_type": "tense",
+      "duration_min": 22.0,
+      "n_t1": 36,
+      "final_score": [
+        15,
+        21
+      ],
+      "t2_classes": {
+        "taken": 2,
+        "extended": 19,
+        "narrowed": 14,
+        "levelled": 1
+      },
+      "zone_counts": {
+        "in_front": 3,
+        "net": 13,
+        "out": 8,
+        "in_mid": 10,
+        "in_back": 2
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-03",
+      "case_type": "blowout",
+      "duration_min": 18.4,
+      "n_t1": 31,
+      "final_score": [
+        21,
+        10
+      ],
+      "t2_classes": {
+        "taken": 2,
+        "levelled": 1,
+        "extended": 19,
+        "narrowed": 9
+      },
+      "zone_counts": {
+        "in_mid": 7,
+        "out": 12,
+        "net": 9,
+        "in_back": 3
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-04",
+      "case_type": "blowout",
+      "duration_min": 17.2,
+      "n_t1": 34,
+      "final_score": [
+        21,
+        13
+      ],
+      "t2_classes": {
+        "taken": 5,
+        "levelled": 4,
+        "extended": 16,
+        "narrowed": 9
+      },
+      "zone_counts": {
+        "net": 7,
+        "in_mid": 11,
+        "out": 9,
+        "in_front": 2,
+        "in_back": 5
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-05",
+      "case_type": "reversal",
+      "duration_min": 20.9,
+      "n_t1": 36,
+      "final_score": [
+        21,
+        15
+      ],
+      "t2_classes": {
+        "taken": 3,
+        "extended": 18,
+        "narrowed": 13,
+        "levelled": 2
+      },
+      "zone_counts": {
+        "net": 16,
+        "out": 8,
+        "in_mid": 7,
+        "in_back": 2,
+        "in_front": 3
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-06",
+      "case_type": "tense",
+      "duration_min": 18.8,
+      "n_t1": 37,
+      "final_score": [
+        16,
+        21
+      ],
+      "t2_classes": {
+        "taken": 2,
+        "extended": 19,
+        "narrowed": 15,
+        "levelled": 1
+      },
+      "zone_counts": {
+        "net": 10,
+        "in_mid": 11,
+        "out": 11,
+        "in_back": 3,
+        "in_front": 2
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-07",
+      "case_type": "reversal",
+      "duration_min": 17.2,
+      "n_t1": 40,
+      "final_score": [
+        21,
+        19
+      ],
+      "t2_classes": {
+        "taken": 3,
+        "extended": 18,
+        "narrowed": 17,
+        "levelled": 2
+      },
+      "zone_counts": {
+        "out": 10,
+        "net": 15,
+        "in_mid": 11,
+        "in_back": 3,
+        "in_front": 1
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-08",
+      "case_type": "blowout",
+      "duration_min": 18.3,
+      "n_t1": 33,
+      "final_score": [
+        21,
+        12
+      ],
+      "t2_classes": {
+        "taken": 9,
+        "levelled": 8,
+        "extended": 12,
+        "narrowed": 4
+      },
+      "zone_counts": {
+        "out": 11,
+        "net": 18,
+        "in_mid": 4
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-09",
+      "case_type": "reversal",
+      "duration_min": 17.1,
+      "n_t1": 34,
+      "final_score": [
+        13,
+        21
+      ],
+      "t2_classes": {
+        "taken": 4,
+        "extended": 17,
+        "narrowed": 10,
+        "levelled": 3
+      },
+      "zone_counts": {
+        "net": 14,
+        "in_mid": 7,
+        "out": 10,
+        "in_back": 1,
+        "in_front": 2
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-10",
+      "case_type": "reversal",
+      "duration_min": 23.4,
+      "n_t1": 35,
+      "final_score": [
+        21,
+        14
+      ],
+      "t2_classes": {
+        "taken": 4,
+        "extended": 17,
+        "narrowed": 11,
+        "levelled": 3
+      },
+      "zone_counts": {
+        "in_back": 3,
+        "net": 13,
+        "out": 12,
+        "in_mid": 6,
+        "in_front": 1
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-11",
+      "case_type": "tense",
+      "duration_min": 19.3,
+      "n_t1": 36,
+      "final_score": [
+        21,
+        15
+      ],
+      "t2_classes": {
+        "taken": 5,
+        "levelled": 4,
+        "extended": 16,
+        "narrowed": 11
+      },
+      "zone_counts": {
+        "in_back": 4,
+        "in_mid": 6,
+        "in_front": 2,
+        "net": 12,
+        "out": 12
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-12",
+      "case_type": "tense",
+      "duration_min": 21.1,
+      "n_t1": 34,
+      "final_score": [
+        13,
+        21
+      ],
+      "t2_classes": {
+        "taken": 1,
+        "extended": 20,
+        "narrowed": 13
+      },
+      "zone_counts": {
+        "out": 10,
+        "net": 12,
+        "in_mid": 10,
+        "in_front": 1,
+        "in_back": 1
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-13",
+      "case_type": "reversal",
+      "duration_min": 20.3,
+      "n_t1": 36,
+      "final_score": [
+        15,
+        21
+      ],
+      "t2_classes": {
+        "taken": 5,
+        "extended": 16,
+        "narrowed": 11,
+        "levelled": 4
+      },
+      "zone_counts": {
+        "in_front": 3,
+        "net": 16,
+        "in_mid": 8,
+        "out": 8,
+        "in_back": 1
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-14",
+      "case_type": "blowout",
+      "duration_min": 18.9,
+      "n_t1": 33,
+      "final_score": [
+        21,
+        12
+      ],
+      "t2_classes": {
+        "taken": 5,
+        "levelled": 4,
+        "extended": 16,
+        "narrowed": 8
+      },
+      "zone_counts": {
+        "in_mid": 12,
+        "in_front": 3,
+        "out": 5,
+        "net": 12,
+        "in_back": 1
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-15",
+      "case_type": "reversal",
+      "duration_min": 22.0,
+      "n_t1": 36,
+      "final_score": [
+        15,
+        21
+      ],
+      "t2_classes": {
+        "taken": 4,
+        "levelled": 3,
+        "extended": 17,
+        "narrowed": 12
+      },
+      "zone_counts": {
+        "net": 18,
+        "out": 6,
+        "in_mid": 7,
+        "in_back": 3,
+        "in_front": 2
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-16",
+      "case_type": "reversal",
+      "duration_min": 27.4,
+      "n_t1": 40,
+      "final_score": [
+        19,
+        21
+      ],
+      "t2_classes": {
+        "taken": 6,
+        "extended": 15,
+        "narrowed": 14,
+        "levelled": 5
+      },
+      "zone_counts": {
+        "net": 13,
+        "in_mid": 12,
+        "in_front": 3,
+        "out": 9,
+        "in_back": 3
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-17",
+      "case_type": "blowout",
+      "duration_min": 18.3,
+      "n_t1": 28,
+      "final_score": [
+        7,
+        21
+      ],
+      "t2_classes": {
+        "taken": 1,
+        "extended": 20,
+        "narrowed": 7
+      },
+      "zone_counts": {
+        "out": 6,
+        "in_mid": 7,
+        "net": 14,
+        "in_back": 1
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-18",
+      "case_type": "tense",
+      "duration_min": 16.9,
+      "n_t1": 36,
+      "final_score": [
+        15,
+        21
+      ],
+      "t2_classes": {
+        "taken": 4,
+        "extended": 17,
+        "narrowed": 12,
+        "levelled": 3
+      },
+      "zone_counts": {
+        "net": 16,
+        "out": 8,
+        "in_back": 3,
+        "in_mid": 9
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-19",
+      "case_type": "tense",
+      "duration_min": 19.3,
+      "n_t1": 36,
+      "final_score": [
+        15,
+        21
+      ],
+      "t2_classes": {
+        "taken": 1,
+        "extended": 20,
+        "narrowed": 15
+      },
+      "zone_counts": {
+        "out": 12,
+        "net": 6,
+        "in_mid": 7,
+        "in_front": 3,
+        "in_back": 8
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    },
+    {
+      "case_id": "badminton-20",
+      "case_type": "blowout",
+      "duration_min": 18.3,
+      "n_t1": 34,
+      "final_score": [
+        13,
+        21
+      ],
+      "t2_classes": {
+        "taken": 3,
+        "levelled": 2,
+        "extended": 18,
+        "narrowed": 11
+      },
+      "zone_counts": {
+        "out": 9,
+        "net": 16,
+        "in_back": 2,
+        "in_mid": 6,
+        "in_front": 1
+      },
+      "hud_audit": {
+        "pass": true,
+        "kind": "structural",
+        "surviving_px_half": 0,
+        "regions": 0,
+        "point_pairs": null,
+        "control_pairs": null,
+        "min_blob_px": null,
+        "why": "this module never reads a score column, so no flag can turn one on; no font is ever loaded, so there are no glyphs to render."
+      }
+    }
+  ]
+}

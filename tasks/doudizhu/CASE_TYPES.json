@@ -1,0 +1,563 @@
+{
+  "game": "doudizhu",
+  "engine": "DouZero-WP released weights, mechanism B, PIMC belief",
+  "V_definition": "landlord win probability = fraction of sampled deals won by the landlord, where each deal is drawn uniformly from those CONSISTENT with the landlord information set at that state (real landlord hand, real farmer plays, exact farmer counts) and played out greedily (tau=0.00) by the released DouZero-WP networks; 400..4000 sampled deals per state, adaptively refined to push labels past 2 sigma from their band boundary; any that remain inside it are abstained, not guessed. V is a function of what is on screen and NOT itself on screen. Belief model: uniform over count-consistent deals; the standard PIMC limitation is that this ignores inference from the action history.",
+  "information_set": "landlord: own hand + bottom three + all plays + both farmer card counts. The two farmer hands are face DOWN in the video and are never revealed.",
+  "tiers": "T1 = the move (player, move_type, num_cards) at its timestamp | T2 = the change in V that move caused (impact) | T3 = the situation AFTER it (leader_after)",
+  "t3_definition": "leader_after = band of V immediately AFTER the move (landlord if V>0.55, farmers if V<0.45, else equal). Unified tier semantics: T1 = the event, T2 = the change in V it caused, T3 = the resulting situation.",
+  "impact_eps": 0.034,
+  "leader_band": 0.05,
+  "thresholds": "FIXED across every case: reject or re-select a case, never re-tune eps for it, or macro_acc stops being comparable across the corpus",
+  "abstention": "a row whose label is within 2 sigma of its band boundary carries null on that tier and is NOT scored there; it is still a T1 event. The model cannot tell which rows those are, so it must answer every row - abstention removes undecidable labels from the numerator, it does not make the task easier.",
+  "event_rule": "every move that plays >=1 card; passes are shown on screen but never reported",
+  "move_sec": 6.0,
+  "leadin_sec": 12.0,
+  "resolution": "1280x720",
+  "distribution": {
+    "tense": 7,
+    "blowout": 7,
+    "reversal": 6
+  },
+  "cases": [
+    {
+      "case_id": "dzh-01",
+      "case_type": "tense",
+      "winner_trough_smin": 0.1303,
+      "duration_min": 5.3,
+      "winner": "farmer",
+      "n_events": 27,
+      "total_moves": 51,
+      "n_passes_shown": 24,
+      "v_min": 0.0,
+      "v_max": 0.895,
+      "lead_crossings": 4,
+      "t3_classes": {
+        "farmers": 11,
+        "landlord": 10,
+        "equal": 2
+      },
+      "t2_classes": {
+        "neutral": 10,
+        "landlord": 5,
+        "farmers": 3
+      },
+      "scored_t3": 23,
+      "scored_t2": 18,
+      "abstained_t3": 4,
+      "abstained_t2": 9
+    },
+    {
+      "case_id": "dzh-02",
+      "case_type": "tense",
+      "winner_trough_smin": 0.1666,
+      "duration_min": 4.6,
+      "winner": "farmer",
+      "n_events": 23,
+      "total_moves": 44,
+      "n_passes_shown": 21,
+      "v_min": 0.0,
+      "v_max": 0.8625,
+      "lead_crossings": 5,
+      "t3_classes": {
+        "landlord": 9,
+        "farmers": 6,
+        "equal": 2
+      },
+      "t2_classes": {
+        "neutral": 12,
+        "farmers": 6,
+        "landlord": 4
+      },
+      "scored_t3": 17,
+      "scored_t2": 22,
+      "abstained_t3": 6,
+      "abstained_t2": 1
+    },
+    {
+      "case_id": "dzh-03",
+      "case_type": "blowout",
+      "winner_trough_smin": 0.3861,
+      "duration_min": 3.6,
+      "winner": "landlord",
+      "n_events": 19,
+      "total_moves": 34,
+      "n_passes_shown": 15,
+      "v_min": 0.3375,
+      "v_max": 1.0,
+      "lead_crossings": 3,
+      "t3_classes": {
+        "farmers": 5,
+        "equal": 1,
+        "landlord": 8
+      },
+      "t2_classes": {
+        "neutral": 8,
+        "farmers": 2,
+        "landlord": 4
+      },
+      "scored_t3": 14,
+      "scored_t2": 14,
+      "abstained_t3": 5,
+      "abstained_t2": 5
+    },
+    {
+      "case_id": "dzh-04",
+      "case_type": "reversal",
+      "winner_trough_smin": 0.0166,
+      "duration_min": 3.1,
+      "winner": "farmer",
+      "n_events": 14,
+      "total_moves": 29,
+      "n_passes_shown": 15,
+      "v_min": 0.0,
+      "v_max": 0.9868,
+      "lead_crossings": 6,
+      "t3_classes": {
+        "farmers": 3,
+        "equal": 7,
+        "landlord": 4
+      },
+      "t2_classes": {
+        "neutral": 6,
+        "landlord": 4,
+        "farmers": 3
+      },
+      "scored_t3": 14,
+      "scored_t2": 13,
+      "abstained_t3": 0,
+      "abstained_t2": 1
+    },
+    {
+      "case_id": "dzh-05",
+      "case_type": "reversal",
+      "winner_trough_smin": 0.116,
+      "duration_min": 6.3,
+      "winner": "landlord",
+      "n_events": 31,
+      "total_moves": 61,
+      "n_passes_shown": 30,
+      "v_min": 0.0959,
+      "v_max": 1.0,
+      "lead_crossings": 1,
+      "t3_classes": {
+        "farmers": 12,
+        "equal": 3,
+        "landlord": 14
+      },
+      "t2_classes": {
+        "neutral": 17,
+        "landlord": 7,
+        "farmers": 2
+      },
+      "scored_t3": 29,
+      "scored_t2": 26,
+      "abstained_t3": 2,
+      "abstained_t2": 5
+    },
+    {
+      "case_id": "dzh-06",
+      "case_type": "reversal",
+      "winner_trough_smin": 0.0938,
+      "duration_min": 5.8,
+      "winner": "farmer",
+      "n_events": 27,
+      "total_moves": 56,
+      "n_passes_shown": 29,
+      "v_min": 0.0,
+      "v_max": 0.9075,
+      "lead_crossings": 3,
+      "t3_classes": {
+        "equal": 8,
+        "landlord": 12,
+        "farmers": 3
+      },
+      "t2_classes": {
+        "neutral": 13,
+        "landlord": 3,
+        "farmers": 4
+      },
+      "scored_t3": 23,
+      "scored_t2": 20,
+      "abstained_t3": 4,
+      "abstained_t2": 7
+    },
+    {
+      "case_id": "dzh-07",
+      "case_type": "blowout",
+      "winner_trough_smin": 0.234,
+      "duration_min": 3.8,
+      "winner": "farmer",
+      "n_events": 17,
+      "total_moves": 36,
+      "n_passes_shown": 19,
+      "v_min": 0.0,
+      "v_max": 0.895,
+      "lead_crossings": 3,
+      "t3_classes": {
+        "equal": 5,
+        "landlord": 3,
+        "farmers": 4
+      },
+      "t2_classes": {
+        "neutral": 8,
+        "landlord": 3,
+        "farmers": 5
+      },
+      "scored_t3": 12,
+      "scored_t2": 16,
+      "abstained_t3": 5,
+      "abstained_t2": 1
+    },
+    {
+      "case_id": "dzh-08",
+      "case_type": "blowout",
+      "winner_trough_smin": 0.2341,
+      "duration_min": 4.2,
+      "winner": "landlord",
+      "n_events": 21,
+      "total_moves": 40,
+      "n_passes_shown": 19,
+      "v_min": 0.2318,
+      "v_max": 1.0,
+      "lead_crossings": 1,
+      "t3_classes": {
+        "farmers": 7,
+        "equal": 1,
+        "landlord": 11
+      },
+      "t2_classes": {
+        "neutral": 12,
+        "landlord": 7,
+        "farmers": 1
+      },
+      "scored_t3": 19,
+      "scored_t2": 20,
+      "abstained_t3": 2,
+      "abstained_t2": 1
+    },
+    {
+      "case_id": "dzh-09",
+      "case_type": "blowout",
+      "winner_trough_smin": 0.233,
+      "duration_min": 4.6,
+      "winner": "farmer",
+      "n_events": 25,
+      "total_moves": 44,
+      "n_passes_shown": 19,
+      "v_min": 0.0,
+      "v_max": 0.7886,
+      "lead_crossings": 2,
+      "t3_classes": {
+        "farmers": 13,
+        "equal": 2,
+        "landlord": 5
+      },
+      "t2_classes": {
+        "neutral": 13,
+        "landlord": 5,
+        "farmers": 3
+      },
+      "scored_t3": 20,
+      "scored_t2": 21,
+      "abstained_t3": 5,
+      "abstained_t2": 4
+    },
+    {
+      "case_id": "dzh-10",
+      "case_type": "blowout",
+      "winner_trough_smin": 0.2455,
+      "duration_min": 4.4,
+      "winner": "farmer",
+      "n_events": 18,
+      "total_moves": 42,
+      "n_passes_shown": 24,
+      "v_min": 0.0,
+      "v_max": 0.81,
+      "lead_crossings": 3,
+      "t3_classes": {
+        "farmers": 8,
+        "landlord": 8,
+        "equal": 2
+      },
+      "t2_classes": {
+        "neutral": 7,
+        "landlord": 3,
+        "farmers": 5
+      },
+      "scored_t3": 18,
+      "scored_t2": 15,
+      "abstained_t3": 0,
+      "abstained_t2": 3
+    },
+    {
+      "case_id": "dzh-11",
+      "case_type": "blowout",
+      "winner_trough_smin": 0.3202,
+      "duration_min": 2.6,
+      "winner": "farmer",
+      "n_events": 14,
+      "total_moves": 24,
+      "n_passes_shown": 10,
+      "v_min": 0.0,
+      "v_max": 0.6825,
+      "lead_crossings": 4,
+      "t3_classes": {
+        "farmers": 4,
+        "landlord": 4,
+        "equal": 4
+      },
+      "t2_classes": {
+        "neutral": 6,
+        "landlord": 5,
+        "farmers": 2
+      },
+      "scored_t3": 12,
+      "scored_t2": 13,
+      "abstained_t3": 2,
+      "abstained_t2": 1
+    },
+    {
+      "case_id": "dzh-12",
+      "case_type": "reversal",
+      "winner_trough_smin": 0.0743,
+      "duration_min": 3.6,
+      "winner": "landlord",
+      "n_events": 16,
+      "total_moves": 34,
+      "n_passes_shown": 18,
+      "v_min": 0.0714,
+      "v_max": 1.0,
+      "lead_crossings": 3,
+      "t3_classes": {
+        "farmers": 7,
+        "equal": 3,
+        "landlord": 5
+      },
+      "t2_classes": {
+        "neutral": 10,
+        "farmers": 1,
+        "landlord": 2
+      },
+      "scored_t3": 15,
+      "scored_t2": 13,
+      "abstained_t3": 1,
+      "abstained_t2": 3
+    },
+    {
+      "case_id": "dzh-13",
+      "case_type": "tense",
+      "winner_trough_smin": 0.1301,
+      "duration_min": 5.2,
+      "winner": "farmer",
+      "n_events": 25,
+      "total_moves": 50,
+      "n_passes_shown": 25,
+      "v_min": 0.0,
+      "v_max": 0.908,
+      "lead_crossings": 2,
+      "t3_classes": {
+        "farmers": 5,
+        "equal": 3,
+        "landlord": 17
+      },
+      "t2_classes": {
+        "neutral": 13,
+        "landlord": 3,
+        "farmers": 2
+      },
+      "scored_t3": 25,
+      "scored_t2": 18,
+      "abstained_t3": 0,
+      "abstained_t2": 7
+    },
+    {
+      "case_id": "dzh-14",
+      "case_type": "reversal",
+      "winner_trough_smin": 0.073,
+      "duration_min": 4.0,
+      "winner": "farmer",
+      "n_events": 22,
+      "total_moves": 38,
+      "n_passes_shown": 16,
+      "v_min": 0.0,
+      "v_max": 0.935,
+      "lead_crossings": 2,
+      "t3_classes": {
+        "farmers": 9,
+        "equal": 1,
+        "landlord": 11
+      },
+      "t2_classes": {
+        "neutral": 10,
+        "landlord": 6,
+        "farmers": 5
+      },
+      "scored_t3": 21,
+      "scored_t2": 21,
+      "abstained_t3": 1,
+      "abstained_t2": 1
+    },
+    {
+      "case_id": "dzh-15",
+      "case_type": "tense",
+      "winner_trough_smin": 0.1625,
+      "duration_min": 4.4,
+      "winner": "farmer",
+      "n_events": 22,
+      "total_moves": 42,
+      "n_passes_shown": 20,
+      "v_min": 0.0,
+      "v_max": 0.9075,
+      "lead_crossings": 2,
+      "t3_classes": {
+        "farmers": 12,
+        "equal": 1,
+        "landlord": 9
+      },
+      "t2_classes": {
+        "neutral": 11,
+        "landlord": 5,
+        "farmers": 2
+      },
+      "scored_t3": 22,
+      "scored_t2": 18,
+      "abstained_t3": 0,
+      "abstained_t2": 4
+    },
+    {
+      "case_id": "dzh-16",
+      "case_type": "reversal",
+      "winner_trough_smin": 0.1098,
+      "duration_min": 4.6,
+      "winner": "farmer",
+      "n_events": 21,
+      "total_moves": 44,
+      "n_passes_shown": 23,
+      "v_min": 0.0,
+      "v_max": 0.9025,
+      "lead_crossings": 6,
+      "t3_classes": {
+        "farmers": 11,
+        "equal": 3,
+        "landlord": 6
+      },
+      "t2_classes": {
+        "neutral": 8,
+        "landlord": 4,
+        "farmers": 4
+      },
+      "scored_t3": 20,
+      "scored_t2": 16,
+      "abstained_t3": 1,
+      "abstained_t2": 5
+    },
+    {
+      "case_id": "dzh-17",
+      "case_type": "tense",
+      "winner_trough_smin": 0.2015,
+      "duration_min": 5.4,
+      "winner": "landlord",
+      "n_events": 23,
+      "total_moves": 52,
+      "n_passes_shown": 29,
+      "v_min": 0.14,
+      "v_max": 1.0,
+      "lead_crossings": 2,
+      "t3_classes": {
+        "equal": 1,
+        "landlord": 13,
+        "farmers": 7
+      },
+      "t2_classes": {
+        "neutral": 7,
+        "landlord": 5,
+        "farmers": 4
+      },
+      "scored_t3": 21,
+      "scored_t2": 16,
+      "abstained_t3": 2,
+      "abstained_t2": 7
+    },
+    {
+      "case_id": "dzh-18",
+      "case_type": "blowout",
+      "winner_trough_smin": 0.2591,
+      "duration_min": 4.1,
+      "winner": "farmer",
+      "n_events": 21,
+      "total_moves": 39,
+      "n_passes_shown": 18,
+      "v_min": 0.0,
+      "v_max": 0.915,
+      "lead_crossings": 4,
+      "t3_classes": {
+        "equal": 2,
+        "landlord": 7,
+        "farmers": 11
+      },
+      "t2_classes": {
+        "neutral": 11,
+        "landlord": 4,
+        "farmers": 3
+      },
+      "scored_t3": 20,
+      "scored_t2": 18,
+      "abstained_t3": 1,
+      "abstained_t2": 3
+    },
+    {
+      "case_id": "dzh-19",
+      "case_type": "tense",
+      "winner_trough_smin": 0.2045,
+      "duration_min": 4.5,
+      "winner": "landlord",
+      "n_events": 23,
+      "total_moves": 43,
+      "n_passes_shown": 20,
+      "v_min": 0.1943,
+      "v_max": 1.0,
+      "lead_crossings": 3,
+      "t3_classes": {
+        "farmers": 12,
+        "landlord": 5,
+        "equal": 3
+      },
+      "t2_classes": {
+        "neutral": 10,
+        "landlord": 6,
+        "farmers": 1
+      },
+      "scored_t3": 20,
+      "scored_t2": 17,
+      "abstained_t3": 3,
+      "abstained_t2": 6
+    },
+    {
+      "case_id": "dzh-20",
+      "case_type": "tense",
+      "winner_trough_smin": 0.1402,
+      "duration_min": 4.0,
+      "winner": "farmer",
+      "n_events": 20,
+      "total_moves": 38,
+      "n_passes_shown": 18,
+      "v_min": 0.0,
+      "v_max": 0.885,
+      "lead_crossings": 2,
+      "t3_classes": {
+        "farmers": 2,
+        "landlord": 14,
+        "equal": 1
+      },
+      "t2_classes": {
+        "neutral": 8,
+        "landlord": 3,
+        "farmers": 4
+      },
+      "scored_t3": 17,
+      "scored_t2": 15,
+      "abstained_t3": 3,
+      "abstained_t2": 5
+    }
+  ]
+}

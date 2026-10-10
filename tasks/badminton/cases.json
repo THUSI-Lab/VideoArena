@@ -1,0 +1,26 @@
+{
+  "game": "badminton",
+  "n_cases": 20,
+  "case_ids": [
+    "badminton-01",
+    "badminton-02",
+    "badminton-03",
+    "badminton-04",
+    "badminton-05",
+    "badminton-06",
+    "badminton-07",
+    "badminton-08",
+    "badminton-09",
+    "badminton-10",
+    "badminton-11",
+    "badminton-12",
+    "badminton-13",
+    "badminton-14",
+    "badminton-15",
+    "badminton-16",
+    "badminton-17",
+    "badminton-18",
+    "badminton-19",
+    "badminton-20"
+  ]
+}

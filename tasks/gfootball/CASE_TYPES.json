@@ -1,0 +1,315 @@
+{
+  "game": "gfootball",
+  "V_definition": "left_goals - right_goals (engine obs['score']); never on screen",
+  "tiers": {
+    "t1": "(game_clock_s, scoring_side, scorer_name)",
+    "t2": "impact in {extended, taken, levelled, narrowed}",
+    "t3": "score_after = (L_after, R_after)"
+  },
+  "engine": "gfootball mechanism A (engine-exposed V), HUD suppressed in-engine",
+  "scorer_source": "engine VA_GOAL_LOG (match.cpp lastGoalScorer), reconciled against our score chain goal-by-goal",
+  "resolution": "1280x720 (no crop)",
+  "fps": 24,
+  "distribution": {
+    "blowout": 7,
+    "tense": 6,
+    "reversal": 7
+  },
+  "cases": [
+    {
+      "case_id": "gf-01",
+      "case_type": "blowout",
+      "duration_min": 15.0,
+      "result": "13-4",
+      "n_t1": 17,
+      "t2_classes": {
+        "taken": 2,
+        "levelled": 1,
+        "extended": 11,
+        "narrowed": 3
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 2
+    },
+    {
+      "case_id": "gf-02",
+      "case_type": "tense",
+      "duration_min": 16.1,
+      "result": "7-10",
+      "n_t1": 17,
+      "t2_classes": {
+        "taken": 1,
+        "extended": 9,
+        "narrowed": 7
+      },
+      "own_goals": 1,
+      "possession_rule_disagreements": 2
+    },
+    {
+      "case_id": "gf-03",
+      "case_type": "reversal",
+      "duration_min": 17.1,
+      "result": "7-14",
+      "n_t1": 21,
+      "t2_classes": {
+        "taken": 3,
+        "extended": 11,
+        "narrowed": 5,
+        "levelled": 2
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 3
+    },
+    {
+      "case_id": "gf-04",
+      "case_type": "blowout",
+      "duration_min": 18.2,
+      "result": "19-12",
+      "n_t1": 31,
+      "t2_classes": {
+        "taken": 1,
+        "extended": 18,
+        "narrowed": 12
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 4
+    },
+    {
+      "case_id": "gf-05",
+      "case_type": "blowout",
+      "duration_min": 19.2,
+      "result": "12-3",
+      "n_t1": 15,
+      "t2_classes": {
+        "taken": 1,
+        "extended": 11,
+        "narrowed": 3
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 3
+    },
+    {
+      "case_id": "gf-06",
+      "case_type": "blowout",
+      "duration_min": 20.3,
+      "result": "8-7",
+      "n_t1": 15,
+      "t2_classes": {
+        "taken": 3,
+        "levelled": 2,
+        "extended": 5,
+        "narrowed": 5
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 1
+    },
+    {
+      "case_id": "gf-07",
+      "case_type": "tense",
+      "duration_min": 21.3,
+      "result": "5-8",
+      "n_t1": 13,
+      "t2_classes": {
+        "taken": 4,
+        "levelled": 3,
+        "extended": 4,
+        "narrowed": 2
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 5
+    },
+    {
+      "case_id": "gf-08",
+      "case_type": "reversal",
+      "duration_min": 22.4,
+      "result": "5-4",
+      "n_t1": 9,
+      "t2_classes": {
+        "taken": 4,
+        "levelled": 3,
+        "extended": 1,
+        "narrowed": 1
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 3
+    },
+    {
+      "case_id": "gf-09",
+      "case_type": "reversal",
+      "duration_min": 23.4,
+      "result": "6-7",
+      "n_t1": 13,
+      "t2_classes": {
+        "taken": 4,
+        "levelled": 3,
+        "extended": 3,
+        "narrowed": 3
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 0
+    },
+    {
+      "case_id": "gf-10",
+      "case_type": "reversal",
+      "duration_min": 24.5,
+      "result": "12-18",
+      "n_t1": 30,
+      "t2_classes": {
+        "taken": 3,
+        "extended": 15,
+        "narrowed": 10,
+        "levelled": 2
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 8
+    },
+    {
+      "case_id": "gf-11",
+      "case_type": "reversal",
+      "duration_min": 25.5,
+      "result": "10-13",
+      "n_t1": 23,
+      "t2_classes": {
+        "taken": 6,
+        "levelled": 5,
+        "extended": 7,
+        "narrowed": 5
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 3
+    },
+    {
+      "case_id": "gf-12",
+      "case_type": "blowout",
+      "duration_min": 26.6,
+      "result": "10-19",
+      "n_t1": 29,
+      "t2_classes": {
+        "taken": 3,
+        "levelled": 2,
+        "extended": 16,
+        "narrowed": 8
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 5
+    },
+    {
+      "case_id": "gf-13",
+      "case_type": "tense",
+      "duration_min": 27.6,
+      "result": "19-16",
+      "n_t1": 35,
+      "t2_classes": {
+        "taken": 2,
+        "extended": 17,
+        "narrowed": 15,
+        "levelled": 1
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 7
+    },
+    {
+      "case_id": "gf-14",
+      "case_type": "tense",
+      "duration_min": 28.7,
+      "result": "8-6",
+      "n_t1": 14,
+      "t2_classes": {
+        "taken": 4,
+        "levelled": 3,
+        "extended": 4,
+        "narrowed": 3
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 3
+    },
+    {
+      "case_id": "gf-15",
+      "case_type": "blowout",
+      "duration_min": 29.7,
+      "result": "19-14",
+      "n_t1": 33,
+      "t2_classes": {
+        "taken": 2,
+        "extended": 17,
+        "narrowed": 13,
+        "levelled": 1
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 7
+    },
+    {
+      "case_id": "gf-16",
+      "case_type": "reversal",
+      "duration_min": 30.8,
+      "result": "13-16",
+      "n_t1": 29,
+      "t2_classes": {
+        "taken": 3,
+        "extended": 13,
+        "narrowed": 11,
+        "levelled": 2
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 6
+    },
+    {
+      "case_id": "gf-17",
+      "case_type": "blowout",
+      "duration_min": 31.8,
+      "result": "18-13",
+      "n_t1": 31,
+      "t2_classes": {
+        "taken": 4,
+        "extended": 14,
+        "narrowed": 10,
+        "levelled": 3
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 10
+    },
+    {
+      "case_id": "gf-18",
+      "case_type": "tense",
+      "duration_min": 32.9,
+      "result": "7-10",
+      "n_t1": 17,
+      "t2_classes": {
+        "taken": 1,
+        "extended": 9,
+        "narrowed": 7
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 3
+    },
+    {
+      "case_id": "gf-19",
+      "case_type": "reversal",
+      "duration_min": 33.9,
+      "result": "2-5",
+      "n_t1": 7,
+      "t2_classes": {
+        "taken": 2,
+        "levelled": 1,
+        "extended": 3,
+        "narrowed": 1
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 2
+    },
+    {
+      "case_id": "gf-20",
+      "case_type": "tense",
+      "duration_min": 35.0,
+      "result": "4-2",
+      "n_t1": 6,
+      "t2_classes": {
+        "taken": 1,
+        "extended": 3,
+        "narrowed": 2
+      },
+      "own_goals": 0,
+      "possession_rule_disagreements": 2
+    }
+  ]
+}

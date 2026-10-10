@@ -1,0 +1,9 @@
+# data from Hugging Face (hf download)
+tasks/*/media/
+tasks/*/gt/
+# outputs
+/runs/
+/harbor/
+__pycache__/
+*.pyc
+.cache/

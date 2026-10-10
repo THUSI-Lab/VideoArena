@@ -1,0 +1,26 @@
+{
+  "game": "dota2",
+  "n_cases": 20,
+  "case_ids": [
+    "dota-01",
+    "dota-02",
+    "dota-03",
+    "dota-04",
+    "dota-05",
+    "dota-06",
+    "dota-07",
+    "dota-08",
+    "dota-09",
+    "dota-10",
+    "dota-11",
+    "dota-12",
+    "dota-13",
+    "dota-14",
+    "dota-15",
+    "dota-16",
+    "dota-17",
+    "dota-18",
+    "dota-19",
+    "dota-20"
+  ]
+}

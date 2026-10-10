@@ -1,0 +1,26 @@
+{
+  "game": "cs2",
+  "n_cases": 20,
+  "case_ids": [
+    "9z-vs-legacy-m1-inferno",
+    "9z-vs-legacy-m2-nuke",
+    "falcons-vs-vitality-m2-inferno",
+    "falcons-vs-vitality-m3-dust2",
+    "g2-vs-spirit-m1-overpass",
+    "g2-vs-spirit-m2-dust2",
+    "mouz-vs-fut-m1-ancient",
+    "mouz-vs-fut-m2-nuke",
+    "mouz-vs-fut-m3-mirage",
+    "natus-vincere-vs-the-mongolz-m1-nuke",
+    "natus-vincere-vs-the-mongolz-m2-ancient",
+    "natus-vincere-vs-the-mongolz-m3-mirage",
+    "natus-vincere-vs-vitality-m1-dust2",
+    "natus-vincere-vs-vitality-m2-anubis",
+    "natus-vincere-vs-vitality-m3-inferno",
+    "spirit-vs-falcons-m1-anubis",
+    "spirit-vs-falcons-m2-mirage",
+    "spirit-vs-falcons-m3-dust2",
+    "spirit-vs-faze-m1-nuke",
+    "spirit-vs-faze-m2-ancient"
+  ]
+}

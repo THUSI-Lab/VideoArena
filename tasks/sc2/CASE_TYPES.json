@@ -1,0 +1,246 @@
+{
+  "game": "sc2",
+  "tiers": [
+    "T1 localize",
+    "T2 fight_result",
+    "T3 leader_after"
+  ],
+  "V": "resource-equivalent advantage share, +-0.10 band",
+  "thresholds": {
+    "MERGE_GAP": 2.5,
+    "BATTLE_MIN": 150,
+    "BLD_MIN": 80,
+    "POST": 3.0
+  },
+  "selection": {
+    "A_led": [
+      "g00",
+      "g02",
+      "g03",
+      "g05",
+      "g06",
+      "g07",
+      "g09",
+      "g12",
+      "g25",
+      "g27"
+    ],
+    "B_led": [
+      "g01",
+      "g04",
+      "g10",
+      "g13",
+      "g14",
+      "g16",
+      "g18",
+      "g21",
+      "g26",
+      "g29"
+    ]
+  },
+  "per_game": {
+    "g00": {
+      "matchup": "TvZ",
+      "lead": "A",
+      "n_events": 21,
+      "file": "g00_TZ_AbyssalReefL_gt.json"
+    },
+    "g01": {
+      "matchup": "TvZ",
+      "lead": "B",
+      "n_events": 54,
+      "file": "g01_TZ_OdysseyL_gt.json"
+    },
+    "g02": {
+      "matchup": "TvZ",
+      "lead": "A",
+      "n_events": 77,
+      "file": "g02_TZ_AscensiontoAiurL_gt.json"
+    },
+    "g03": {
+      "matchup": "TvZ",
+      "lead": "A",
+      "n_events": 63,
+      "file": "g03_TZ_MechDepotL_gt.json"
+    },
+    "g04": {
+      "matchup": "TvZ",
+      "lead": "B",
+      "n_events": 69,
+      "file": "g04_TZ_InterloperL_gt.json"
+    },
+    "g05": {
+      "matchup": "TvP",
+      "lead": "A",
+      "n_events": 93,
+      "file": "g05_TP_CatalystL_gt.json"
+    },
+    "g06": {
+      "matchup": "TvP",
+      "lead": "A",
+      "n_events": 79,
+      "file": "g06_TP_AcolyteL_gt.json"
+    },
+    "g07": {
+      "matchup": "TvP",
+      "lead": "A",
+      "n_events": 98,
+      "file": "g07_TP_BloodBoilL_gt.json"
+    },
+    "g09": {
+      "matchup": "TvP",
+      "lead": "A",
+      "n_events": 57,
+      "file": "g09_TP_OdysseyL_gt.json"
+    },
+    "g10": {
+      "matchup": "ZvP",
+      "lead": "B",
+      "n_events": 31,
+      "file": "g10_ZP_AscensiontoAiurL_gt.json"
+    },
+    "g12": {
+      "matchup": "ZvP",
+      "lead": "A",
+      "n_events": 63,
+      "file": "g12_ZP_InterloperL_gt.json"
+    },
+    "g13": {
+      "matchup": "ZvP",
+      "lead": "B",
+      "n_events": 106,
+      "file": "g13_ZP_CatalystL_gt.json"
+    },
+    "g14": {
+      "matchup": "ZvP",
+      "lead": "B",
+      "n_events": 52,
+      "file": "g14_ZP_AcolyteL_gt.json"
+    },
+    "g16": {
+      "matchup": "TvT",
+      "lead": "B",
+      "n_events": 56,
+      "file": "g16_TT_AbyssalReefL_gt.json"
+    },
+    "g18": {
+      "matchup": "TvT",
+      "lead": "B",
+      "n_events": 84,
+      "file": "g18_TT_AscensiontoAiurL_gt.json"
+    },
+    "g21": {
+      "matchup": "ZvZ",
+      "lead": "B",
+      "n_events": 62,
+      "file": "g21_ZZ_CatalystL_gt.json"
+    },
+    "g25": {
+      "matchup": "PvP",
+      "lead": "A",
+      "n_events": 68,
+      "file": "g25_PP_OdysseyL_gt.json"
+    },
+    "g26": {
+      "matchup": "PvP",
+      "lead": "B",
+      "n_events": 55,
+      "file": "g26_PP_AscensiontoAiurL_gt.json"
+    },
+    "g27": {
+      "matchup": "PvP",
+      "lead": "A",
+      "n_events": 106,
+      "file": "g27_PP_MechDepotL_gt.json"
+    },
+    "g29": {
+      "matchup": "PvP",
+      "lead": "B",
+      "n_events": 64,
+      "file": "g29_PP_CatalystL_gt.json"
+    }
+  },
+  "note": "engine-generated AI-vs-AI (Harder), 6 matchups; every case >=20 events; balanced A/B-led at dataset level",
+  "cases": [
+    {
+      "case_id": "g00",
+      "leading_side": "A"
+    },
+    {
+      "case_id": "g01",
+      "leading_side": "B"
+    },
+    {
+      "case_id": "g02",
+      "leading_side": "A"
+    },
+    {
+      "case_id": "g03",
+      "leading_side": "A"
+    },
+    {
+      "case_id": "g04",
+      "leading_side": "B"
+    },
+    {
+      "case_id": "g05",
+      "leading_side": "A"
+    },
+    {
+      "case_id": "g06",
+      "leading_side": "A"
+    },
+    {
+      "case_id": "g07",
+      "leading_side": "A"
+    },
+    {
+      "case_id": "g09",
+      "leading_side": "A"
+    },
+    {
+      "case_id": "g10",
+      "leading_side": "B"
+    },
+    {
+      "case_id": "g12",
+      "leading_side": "A"
+    },
+    {
+      "case_id": "g13",
+      "leading_side": "B"
+    },
+    {
+      "case_id": "g14",
+      "leading_side": "B"
+    },
+    {
+      "case_id": "g16",
+      "leading_side": "B"
+    },
+    {
+      "case_id": "g18",
+      "leading_side": "B"
+    },
+    {
+      "case_id": "g21",
+      "leading_side": "B"
+    },
+    {
+      "case_id": "g25",
+      "leading_side": "A"
+    },
+    {
+      "case_id": "g26",
+      "leading_side": "B"
+    },
+    {
+      "case_id": "g27",
+      "leading_side": "A"
+    },
+    {
+      "case_id": "g29",
+      "leading_side": "B"
+    }
+  ]
+}

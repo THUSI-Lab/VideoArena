@@ -1,0 +1,351 @@
+{
+  "game": "go",
+  "thresholds": {
+    "delta": 0.1,
+    "blow_wlf": 0.75,
+    "blow_llf": 0.15,
+    "rev_llf": 0.45
+  },
+  "cases": [
+    {
+      "id": "27400010",
+      "result": "W+R",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 189,
+        "winner_lead_frac": 0.857,
+        "loser_lead_frac": 0.069,
+        "neutral_frac": 0.074,
+        "min_winner_winprob": 0.045,
+        "lead_changes": 2
+      }
+    },
+    {
+      "id": "27400018",
+      "result": "W+43.5",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 220,
+        "winner_lead_frac": 0.9,
+        "loser_lead_frac": 0.023,
+        "neutral_frac": 0.077,
+        "min_winner_winprob": 0.256,
+        "lead_changes": 2
+      }
+    },
+    {
+      "id": "27400025",
+      "result": "W+R",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 195,
+        "winner_lead_frac": 0.754,
+        "loser_lead_frac": 0.056,
+        "neutral_frac": 0.19,
+        "min_winner_winprob": 0.033,
+        "lead_changes": 8
+      }
+    },
+    {
+      "id": "27400032",
+      "result": "W+73.5",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 328,
+        "winner_lead_frac": 0.97,
+        "loser_lead_frac": 0.024,
+        "neutral_frac": 0.006,
+        "min_winner_winprob": 0.029,
+        "lead_changes": 16
+      }
+    },
+    {
+      "id": "27400270",
+      "result": "W+R",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 291,
+        "winner_lead_frac": 0.808,
+        "loser_lead_frac": 0.113,
+        "neutral_frac": 0.079,
+        "min_winner_winprob": 0.044,
+        "lead_changes": 1
+      }
+    },
+    {
+      "id": "27400000",
+      "result": "B+R",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 332,
+        "winner_lead_frac": 0.623,
+        "loser_lead_frac": 0.313,
+        "neutral_frac": 0.063,
+        "min_winner_winprob": 0.011,
+        "lead_changes": 3
+      }
+    },
+    {
+      "id": "27400023",
+      "result": "W+35.5",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 237,
+        "winner_lead_frac": 0.705,
+        "loser_lead_frac": 0.198,
+        "neutral_frac": 0.097,
+        "min_winner_winprob": 0.001,
+        "lead_changes": 12
+      }
+    },
+    {
+      "id": "27400054",
+      "result": "B+R",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 242,
+        "winner_lead_frac": 0.467,
+        "loser_lead_frac": 0.459,
+        "neutral_frac": 0.074,
+        "min_winner_winprob": 0.002,
+        "lead_changes": 3
+      }
+    },
+    {
+      "id": "27400095",
+      "result": "B+23.5",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 276,
+        "winner_lead_frac": 0.388,
+        "loser_lead_frac": 0.424,
+        "neutral_frac": 0.188,
+        "min_winner_winprob": 0.01,
+        "lead_changes": 14
+      }
+    },
+    {
+      "id": "27400268",
+      "result": "W+8.5",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 256,
+        "winner_lead_frac": 0.789,
+        "loser_lead_frac": 0.164,
+        "neutral_frac": 0.047,
+        "min_winner_winprob": 0.001,
+        "lead_changes": 16
+      }
+    },
+    {
+      "id": "27400273",
+      "result": "B+17.5",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 206,
+        "winner_lead_frac": 0.422,
+        "loser_lead_frac": 0.388,
+        "neutral_frac": 0.189,
+        "min_winner_winprob": 0.004,
+        "lead_changes": 9
+      }
+    },
+    {
+      "id": "27400276",
+      "result": "B+R",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 258,
+        "winner_lead_frac": 0.539,
+        "loser_lead_frac": 0.399,
+        "neutral_frac": 0.062,
+        "min_winner_winprob": 0.008,
+        "lead_changes": 5
+      }
+    },
+    {
+      "id": "27400287",
+      "result": "W+R",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 255,
+        "winner_lead_frac": 0.373,
+        "loser_lead_frac": 0.439,
+        "neutral_frac": 0.188,
+        "min_winner_winprob": 0.002,
+        "lead_changes": 22
+      }
+    },
+    {
+      "id": "27400365",
+      "result": "B+3.5",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 214,
+        "winner_lead_frac": 0.584,
+        "loser_lead_frac": 0.29,
+        "neutral_frac": 0.126,
+        "min_winner_winprob": 0.001,
+        "lead_changes": 6
+      }
+    },
+    {
+      "id": "27400568",
+      "result": "B+37.5",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 256,
+        "winner_lead_frac": 0.629,
+        "loser_lead_frac": 0.277,
+        "neutral_frac": 0.094,
+        "min_winner_winprob": 0.01,
+        "lead_changes": 1
+      }
+    },
+    {
+      "id": "27400034",
+      "result": "B+R",
+      "type_zh": "翻转",
+      "type_en": "reversal",
+      "difficulty": 3,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 238,
+        "winner_lead_frac": 0.307,
+        "loser_lead_frac": 0.542,
+        "neutral_frac": 0.151,
+        "min_winner_winprob": 0.002,
+        "lead_changes": 9
+      }
+    },
+    {
+      "id": "27400058",
+      "result": "B+R",
+      "type_zh": "翻转",
+      "type_en": "reversal",
+      "difficulty": 3,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 226,
+        "winner_lead_frac": 0.204,
+        "loser_lead_frac": 0.752,
+        "neutral_frac": 0.044,
+        "min_winner_winprob": 0.001,
+        "lead_changes": 5
+      }
+    },
+    {
+      "id": "27400099",
+      "result": "W+10.5",
+      "type_zh": "翻转",
+      "type_en": "reversal",
+      "difficulty": 3,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 249,
+        "winner_lead_frac": 0.414,
+        "loser_lead_frac": 0.558,
+        "neutral_frac": 0.028,
+        "min_winner_winprob": 0.002,
+        "lead_changes": 7
+      }
+    },
+    {
+      "id": "27400936",
+      "result": "B+41.5",
+      "type_zh": "翻转",
+      "type_en": "reversal",
+      "difficulty": 3,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 386,
+        "winner_lead_frac": 0.345,
+        "loser_lead_frac": 0.645,
+        "neutral_frac": 0.01,
+        "min_winner_winprob": 0.0,
+        "lead_changes": 13
+      }
+    },
+    {
+      "id": "27401428",
+      "result": "W+18.5",
+      "type_zh": "翻转",
+      "type_en": "reversal",
+      "difficulty": 3,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 304,
+        "winner_lead_frac": 0.336,
+        "loser_lead_frac": 0.51,
+        "neutral_frac": 0.155,
+        "min_winner_winprob": 0.003,
+        "lead_changes": 12
+      }
+    }
+  ]
+}

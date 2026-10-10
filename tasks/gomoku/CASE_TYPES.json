@@ -1,0 +1,351 @@
+{
+  "game": "gomoku",
+  "thresholds": {
+    "delta": 0.1,
+    "blow_wlf": 0.75,
+    "blow_llf": 0.15,
+    "rev_llf": 0.35
+  },
+  "cases": [
+    {
+      "id": "0_11_6_2",
+      "result_norm": "W",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 29,
+        "neutral_frac": 0.034,
+        "min_winner_winprob": 0.5,
+        "lead_changes": 0,
+        "winner_lead_frac": 0.966,
+        "loser_lead_frac": 0.0
+      }
+    },
+    {
+      "id": "10_9_0_1",
+      "result_norm": "B",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 44,
+        "neutral_frac": 0.182,
+        "min_winner_winprob": 0.437,
+        "lead_changes": 0,
+        "winner_lead_frac": 0.818,
+        "loser_lead_frac": 0.0
+      }
+    },
+    {
+      "id": "1_9_8_1",
+      "result_norm": "B",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 38,
+        "neutral_frac": 0.184,
+        "min_winner_winprob": 0.378,
+        "lead_changes": 2,
+        "winner_lead_frac": 0.789,
+        "loser_lead_frac": 0.026
+      }
+    },
+    {
+      "id": "2_14_5_1",
+      "result_norm": "B",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 36,
+        "neutral_frac": 0.194,
+        "min_winner_winprob": 0.5,
+        "lead_changes": 0,
+        "winner_lead_frac": 0.806,
+        "loser_lead_frac": 0.0
+      }
+    },
+    {
+      "id": "3_4_13_2",
+      "result_norm": "W",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 29,
+        "neutral_frac": 0.069,
+        "min_winner_winprob": 0.093,
+        "lead_changes": 1,
+        "winner_lead_frac": 0.793,
+        "loser_lead_frac": 0.138
+      }
+    },
+    {
+      "id": "7_18_9_1",
+      "result_norm": "B",
+      "type_zh": "碾压",
+      "type_en": "blowout",
+      "difficulty": 1,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 32,
+        "neutral_frac": 0.094,
+        "min_winner_winprob": 0.5,
+        "lead_changes": 0,
+        "winner_lead_frac": 0.906,
+        "loser_lead_frac": 0.0
+      }
+    },
+    {
+      "id": "0_6_3_1",
+      "result_norm": "B",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 30,
+        "neutral_frac": 0.067,
+        "min_winner_winprob": 0.051,
+        "lead_changes": 1,
+        "winner_lead_frac": 0.6,
+        "loser_lead_frac": 0.333
+      }
+    },
+    {
+      "id": "10_17_7_1",
+      "result_norm": "B",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 42,
+        "neutral_frac": 0.262,
+        "min_winner_winprob": 0.102,
+        "lead_changes": 2,
+        "winner_lead_frac": 0.524,
+        "loser_lead_frac": 0.214
+      }
+    },
+    {
+      "id": "2_2_4_2",
+      "result_norm": "W",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 39,
+        "neutral_frac": 0.154,
+        "min_winner_winprob": 0.224,
+        "lead_changes": 1,
+        "winner_lead_frac": 0.641,
+        "loser_lead_frac": 0.205
+      }
+    },
+    {
+      "id": "5_15_16_2",
+      "result_norm": "W",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 59,
+        "neutral_frac": 0.22,
+        "min_winner_winprob": 0.371,
+        "lead_changes": 2,
+        "winner_lead_frac": 0.746,
+        "loser_lead_frac": 0.034
+      }
+    },
+    {
+      "id": "5_2_12_1",
+      "result_norm": "B",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 52,
+        "neutral_frac": 0.231,
+        "min_winner_winprob": 0.0,
+        "lead_changes": 3,
+        "winner_lead_frac": 0.712,
+        "loser_lead_frac": 0.058
+      }
+    },
+    {
+      "id": "6_11_3_1",
+      "result_norm": "B",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 54,
+        "neutral_frac": 0.426,
+        "min_winner_winprob": 0.428,
+        "lead_changes": 0,
+        "winner_lead_frac": 0.574,
+        "loser_lead_frac": 0.0
+      }
+    },
+    {
+      "id": "6_9_16_2",
+      "result_norm": "W",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 53,
+        "neutral_frac": 0.453,
+        "min_winner_winprob": 0.045,
+        "lead_changes": 1,
+        "winner_lead_frac": 0.245,
+        "loser_lead_frac": 0.302
+      }
+    },
+    {
+      "id": "7_5_26_2",
+      "result_norm": "W",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 43,
+        "neutral_frac": 0.233,
+        "min_winner_winprob": 0.069,
+        "lead_changes": 1,
+        "winner_lead_frac": 0.558,
+        "loser_lead_frac": 0.209
+      }
+    },
+    {
+      "id": "8_27_7_1",
+      "result_norm": "B",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 44,
+        "neutral_frac": 0.227,
+        "min_winner_winprob": 0.0,
+        "lead_changes": 4,
+        "winner_lead_frac": 0.5,
+        "loser_lead_frac": 0.273
+      }
+    },
+    {
+      "id": "9_1_7_2",
+      "result_norm": "W",
+      "type_zh": "焦灼",
+      "type_en": "tense",
+      "difficulty": 2,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 37,
+        "neutral_frac": 0.162,
+        "min_winner_winprob": 0.141,
+        "lead_changes": 1,
+        "winner_lead_frac": 0.595,
+        "loser_lead_frac": 0.243
+      }
+    },
+    {
+      "id": "10_15_18_2",
+      "result_norm": "W",
+      "type_zh": "翻转",
+      "type_en": "reversal",
+      "difficulty": 3,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 41,
+        "neutral_frac": 0.293,
+        "min_winner_winprob": 0.0,
+        "lead_changes": 3,
+        "winner_lead_frac": 0.268,
+        "loser_lead_frac": 0.439
+      }
+    },
+    {
+      "id": "7_18_20_1",
+      "result_norm": "B",
+      "type_zh": "翻转",
+      "type_en": "reversal",
+      "difficulty": 3,
+      "winner": "B",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 34,
+        "neutral_frac": 0.118,
+        "min_winner_winprob": 0.0,
+        "lead_changes": 2,
+        "winner_lead_frac": 0.529,
+        "loser_lead_frac": 0.353
+      }
+    },
+    {
+      "id": "7_20_22_2",
+      "result_norm": "W",
+      "type_zh": "翻转",
+      "type_en": "reversal",
+      "difficulty": 3,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 51,
+        "neutral_frac": 0.039,
+        "min_winner_winprob": 0.0,
+        "lead_changes": 1,
+        "winner_lead_frac": 0.118,
+        "loser_lead_frac": 0.843
+      }
+    },
+    {
+      "id": "8_7_17_2",
+      "result_norm": "W",
+      "type_zh": "翻转",
+      "type_en": "reversal",
+      "difficulty": 3,
+      "winner": "W",
+      "delta": 0.1,
+      "features": {
+        "n_turns": 41,
+        "neutral_frac": 0.122,
+        "min_winner_winprob": 0.026,
+        "lead_changes": 1,
+        "winner_lead_frac": 0.488,
+        "loser_lead_frac": 0.39
+      }
+    }
+  ]
+}
