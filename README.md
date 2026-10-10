@@ -1,5 +1,9 @@
 <div align="center">
 
+<p align="center">
+  <img src="assets/logos/affiliations.png" alt="miHoYo · Tsinghua University · University of Chinese Academy of Sciences · The University of Hong Kong" width="100%" style="width:100%;max-width:100%;">
+</p>
+
 <h1 align="center" style="font-size:3.2em;line-height:1.1;margin:0.2em 0 0.15em;">Video-Arena</h1>
 
 <h2 align="center" style="font-size:1.5em;line-height:1.3;font-weight:600;margin:0 0 0.9em;border:none;">A Scalable Agentic Video Benchmark for Spatiotemporal Capability</h2>
@@ -71,7 +75,7 @@ Hugging Face only and land in place when downloaded with `--local-dir .`.
 VideoArena/
 |-- README.md                       this file
 |-- LICENSE                         Apache-2.0
-|-- assets/                         images for this README
+|-- assets/                         images for this README (teaser, pipeline, logos)
 |-- docs/
 |   |-- PROTOCOLS.md                the two protocols in full, and what a comparable run requires
 |   |-- HARBOR.md                   running both protocols on Harbor: image, datasets, network modes
