@@ -275,13 +275,23 @@ benchmark.** Case ids are permanent: a case is never renamed, and a new render g
 
 ## License
 
-Code, ground truth and renders are released under **Apache-2.0** for **non-commercial research
-use**. The renders are information-reduced derivatives with no player names, faces, avatars, ranks,
-audio or other personal data. Game content remains the property of its publishers, in particular
-Blizzard Entertainment (StarCraft II) and Valve Corporation (Dota 2, Counter-Strike 2). Badminton
-derives from [ShuttleSet](https://arxiv.org/abs/2306.04948) (MIT, © 2022 Wei-Yao Wang), and its notice
-in `tasks/badminton/ATTRIBUTION.md` must accompany any redistribution of those renders.
-`docs/GROUND_TRUTH.md` lists the sources, access dates and engine versions for every game.
+Video-Arena is a **purely scientific research** project. We carry out **no commercial activity** of
+any kind with it: the benchmark is not sold, licensed for a fee, or used in any product or service.
+
+- **Data (videos and ground truth): non-commercial research use only.** The renders are
+  information-reduced derivatives of game replays and game data, with no player names, faces,
+  avatars, ranks, audio or other personal data. Do not use them for commercial purposes and do not
+  train on them.
+- **Game copyright belongs to the publishers.** All game content, copyrights and trademarks remain
+  the property of their publishers and owners, in particular Blizzard Entertainment (StarCraft II)
+  and Valve Corporation (Dota 2, Counter-Strike 2). Badminton derives from
+  [ShuttleSet](https://arxiv.org/abs/2306.04948) (MIT, © 2022 Wei-Yao Wang), and its notice in
+  `tasks/badminton/ATTRIBUTION.md` must accompany any redistribution of those renders.
+- **Code: Apache-2.0.** The evaluation code, judges and documentation are released under the
+  Apache License 2.0. It covers our code only and grants no right to any game content.
+
+`docs/GROUND_TRUTH.md` lists the sources, access dates and engine versions for every game. Please
+read the upstream terms before use.
 
 ## Citation
 
