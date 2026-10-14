@@ -4,9 +4,12 @@
   <img src="assets/logos/affiliations.png" alt="miHoYo · Tsinghua University · University of Chinese Academy of Sciences · The University of Hong Kong" width="100%" style="width:100%;max-width:100%;">
 </p>
 
-<h1 align="center" style="font-size:3.2em;line-height:1.1;margin:0.2em 0 0.15em;">Video-Arena</h1>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/title-dark.png">
+  <img src="assets/title-light.png" alt="Video-Arena" height="88">
+</picture>
 
-<h2 align="center" style="font-size:1.5em;line-height:1.3;font-weight:600;margin:0 0 0.9em;border:none;">A Scalable Agentic Video Benchmark for Spatiotemporal Capability</h2>
+<h3 align="center">A Scalable Agentic Video Benchmark for Spatiotemporal Capability</h3>
 
 <p align="center" style="font-size:1.08em;line-height:1.8;">
 <b>Kuan Zhang</b><sup>1,2,*,‡</sup> &nbsp; <b>Yukun Chen</b><sup>1,3,*,‡</sup> &nbsp; <b>Zhihao Yang</b><sup>1,3,*,‡</sup> &nbsp; Yue Su<sup>4</sup> &nbsp; Xiangnan Wu<sup>3</sup><br>
@@ -24,7 +27,7 @@ Zirong Chen<sup>2</sup> &nbsp; Run Luo<sup>1,5,‡</sup> &nbsp; Tao Tan<sup>1</s
 
 <p align="center">
   <a href="https://videoarena-bench.github.io" style="display:inline-block;margin:2px;"><img src="https://img.shields.io/badge/Project-Page-1f6feb?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Project Page" style="display:inline-block;vertical-align:middle;margin:0;"></a>
-  <a href="https://videoarena-bench.github.io" style="display:inline-block;margin:2px;"><img src="https://img.shields.io/badge/arXiv-coming%20soon-lightgrey?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv (coming soon)" style="display:inline-block;vertical-align:middle;margin:0;"></a>
+  <a href="https://arxiv.org/abs/2610.14158" style="display:inline-block;margin:2px;"><img src="https://img.shields.io/badge/arXiv-2610.14158-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv 2610.14158" style="display:inline-block;vertical-align:middle;margin:0;"></a>
   <a href="https://github.com/THUSI-Lab/VideoArena" style="display:inline-block;margin:2px;"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" style="display:inline-block;vertical-align:middle;margin:0;"></a>
   <a href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" style="display:inline-block;margin:2px;"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-THUSI--Lab%2FVideo--Arena-ffcc4d?style=for-the-badge" alt="Dataset" style="display:inline-block;vertical-align:middle;margin:0;"></a>
   <a href="https://www.apache.org/licenses/LICENSE-2.0" style="display:inline-block;margin:2px;"><img src="https://img.shields.io/badge/License-Apache%202.0-2ea44f?style=for-the-badge" alt="License: Apache 2.0" style="display:inline-block;vertical-align:middle;margin:0;"></a>
@@ -300,7 +303,7 @@ read the upstream terms before use.
   title   = {Video-Arena: A Scalable Agentic Video Benchmark for Spatiotemporal Capability},
   author  = {Zhang, Kuan and Chen, Yukun and Yang, Zhihao and Su, Yue and Wu, Xiangnan and
              Chen, Zirong and Luo, Run and Tan, Tao and Zheng, Yinhe and Li, Yiming},
-  journal = {arXiv preprint},
+  journal = {arXiv preprint arXiv:2610.14158},
   year    = {2026}
 }
 ```
