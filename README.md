@@ -44,9 +44,9 @@ Zirong Chen<sup>2</sup> &nbsp; Run Luo<sup>1,5,‡</sup> &nbsp; Tao Tan<sup>1</s
 ## Overview
 
 Video-Arena asks a model to watch a full recording of a real game and reconstruct a **hidden game
-state variable** $V_t$ (a win probability, a net-worth lead, a score) that is never drawn on screen.
+state variable** <i>V</i><sub>t</sub> (a win probability, a net-worth lead, a score) that is never drawn on screen.
 Scoreboards, clocks, evaluation bars, kill feeds and names are removed when the video is rendered,
-so the only way to report $V_t$ is to have followed the whole match.
+so the only way to report <i>V</i><sub>t</sub> is to have followed the whole match.
 
 - **180 cases, 9 games, 6 genres**: Go, Chess and Gomoku (board), Doudizhu (card), CS2 (FPS),
   DOTA 2 (MOBA), StarCraft II (RTS), and Google Research Football and Badminton (sports). There are 20 cases per
